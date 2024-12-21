@@ -1,7 +1,7 @@
 -module(linear_interpolation).
 -author("adivanced").
 
-%% API
+
 -export([start_linear/2, linear_loop/3, linear_interpolation/2]).
 
 start_linear(Step, From) ->

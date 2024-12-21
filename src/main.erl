@@ -1,8 +1,7 @@
 -module(main).
 -author("adivanced").
 
-%% API
-%% API
+
 -export([start/0, parse_initial_values/0, strings_to_atoms/1, spawn_processes/1]).
 
 start() ->
@@ -30,7 +29,7 @@ supervisor_loop(ChildPids) ->
       supervisor_loop(ChildPids)
   end.
 
-% Парсинг CLI аргументов
+
 parse_initial_values() ->
   Freq = get_arg_value(freq, 1),
   Window = get_arg_value(w, 3),
